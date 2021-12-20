@@ -81,20 +81,20 @@ void keluar(){
 	printf("\n\t\t************************************************************");
 }
 
-//==================================================================//
-//*********		Fungsi Untuk Menampilakan Pesan Error		********//
-//==================================================================// 
-// Nama fungsi		: error											//
-// Input argumen	: -												//
-// Output argumen	: -												//
-// Deskripsi		: Fungsi ini digunakan untuk menampilkan pesan	//
-//					 error kepada user ketika salah menginput		//
-//					 pilihan saat mengakses program.				//
-// Versi			: 1.0							Rev:0			//
-// Tanggal			: 09-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kelas A															//
-//==================================================================//
+//====================================================================//
+//*********	Fungsi Untuk Menampilakan Pesan Error	     ******** //
+//====================================================================// 
+// Nama fungsi		: error					      //
+// Input argumen	: -					      //
+// Output argumen	: -					      //
+// Deskripsi		: Fungsi ini digunakan untuk menampilkan pesan//
+//			error kepada user ketika salah menginput      //
+//			pilihan saat mengakses program.		      //
+// Versi		: 1.0				Rev:0	      //
+// Tanggal		: 09-12-2021				      //
+// I Gusti Agung Intan Utami Putri (2105551020)			      //
+// Kelas A							      //
+//====================================================================//
 
 void error(){
 	printf("\t\t\t===============================================  \n");
@@ -104,21 +104,21 @@ void error(){
 }
 
 
-//==========================================================//
-//*********		Fungsi Untuk Menampilkan Waktu		********//
-//==========================================================//
-// Nama fungsi		: waktu									//
-// Input argumen	:-										//
-// Output argumen	:-										//
-// Deskripsi		: Fungsi ini digunakan untuk mengambil	//
-//					 dan menampilkan waktu pada saat user 	//
-//					 mengakses program.						//
-// Versi			: 1.0					Rev:0			//
-// Tanggal			: 14-12-2021							//
-// I Gusti Agung Intan Utami Putri (2105551020)				//
-// Kadek Intan Cahya Putri	(2105551032)					//
-// Kelas A													//
-//==========================================================//
+//============================================================//
+//*********	Fungsi Untuk Menampilkan Waktu	      ********//
+//============================================================//
+// Nama fungsi		: waktu				      //
+// Input argumen	:-				      //
+// Output argumen	:-				      //
+// Deskripsi		: Fungsi ini digunakan untuk mengambil//
+//			dan menampilkan waktu pada saat user  //
+//			mengakses program.		      //
+// Versi		: 1.0		Rev:0		      //
+// Tanggal		: 14-12-2021			      //
+// I Gusti Agung Intan Utami Putri (2105551020)		      //
+// Kadek Intan Cahya Putri	(2105551032)		      //
+// Kelas A						      //
+//============================================================//
 
 void waktu(){
 	time(&waktuserver);
