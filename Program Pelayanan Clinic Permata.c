@@ -21,24 +21,24 @@ void masuk();		//fungsi untuk masuk sebagai pasien
 void admin();		//fungsi untuk masuk sebagai admin
 void menu();		//fungsi untuk menampilkan pilihan menu
 
-int pilihan;						//variabel pilihan => berfungsi untuk menyimpan pilihan 
-User u;								//variabel u => pendeklarasian dari struct User
-time_t waktuserver;					//variavel waktuserver => berfungsi untuk mengambil waktu dari sistem.
+int pilihan;				//variabel pilihan => berfungsi untuk menyimpan pilihan 
+User u;					//variabel u => pendeklarasian dari struct User
+time_t waktuserver;			//variavel waktuserver => berfungsi untuk mengambil waktu dari sistem.
 char namaFile[]="loginRecord.txt";	//assign namaFile agar menyimpan string "loginRecord.txt"
 
 //==================================================================//
-//*********	Fungsi Untuk Menampilakan Pesan Selamat Datang  ********//
+//********* Fungsi Untuk Menampilakan Pesan Selamat Datang  ********//
 //==================================================================//
-// Nama fungsi		: welcome										//
-// Input argumen	: -												//
-// Output argumen	: -												//
-// Deskripsi		: Fungsi ini digunakan untuk menampilkan pesan	//
-//					 selamat datang kepada user di awal mengakses	//
-//					 program.										//
-// Versi			: 1.0					Rev:0					//
-// Tanggal			: 03-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kelas A															//
+// Nama fungsi		:welcome				    //
+// Input argumen	:-					    //
+// Output argumen	:-					    //
+// Deskripsi		:Fungsi ini digunakan untuk menampilkan pesan//
+//			selamat datang kepada user di awal mengakses//
+//		 	program.				    //
+// Versi		: 1.0				Rev:0	    //
+// Tanggal		: 03-12-2021				    //
+// I Gusti Agung Intan Utami Putri (2105551020)			    //
+// Kelas A							    //
 //==================================================================//
 
 void welcome(){
@@ -57,20 +57,20 @@ void welcome(){
 	system("cls");
 }
 
-//==================================================================//
-//*********		Fungsi Untuk Menampilakan Pesan Keluar		********//
-//==================================================================// 
-// Nama fungsi		: keluar										//
-// Input argumen	: -												//
-// Output argumen	: -												//
+//======================================================================//
+//*********	Fungsi Untuk Menampilakan Pesan Keluar		********//
+//======================================================================// 
+// Nama fungsi		: keluar					//
+// Input argumen	: -						//
+// Output argumen	: -						//
 // Deskripsi		: Fungsi ini digunakan untuk menampilkan pesan	//
-//					 terima kasih kepada user ketika selesai		//
-//					 mengakses program.								//
-// Versi			: 1.0							Rev:0			//
-// Tanggal			: 03-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kelas A															//
-//==================================================================//
+//			terima kasih kepada user ketika selesai		//
+//			mengakses program.				//
+// Versi		: 1.0				Rev:0		//
+// Tanggal		: 03-12-2021					//
+// I Gusti Agung Intan Utami Putri (2105551020)				//
+// Kelas A								//
+//======================================================================//
 
 void keluar(){
 	printf("\n\n\n\n\n\t\t************************************************************\n");
@@ -126,20 +126,20 @@ void waktu(){
 	printf ("\n\t\t\t||==========Tanggal: %d/%d/%d=========||\n\n", waktu -> tm_mday, waktu ->tm_mon +1, waktu -> tm_year +1900);
 }
 
-//===================================================================//
-//*********	Fungsi Untuk Login dan Regis Akun serta Username ********//
-//===================================================================//
-// Nama fungsi		: masuk											//
-// Input argumen	: char username[12], char password[10]			//
-// Output argumen	: -												//
+//======================================================================//
+//********* Fungsi Untuk Login dan Regis Akun serta Username 	********//
+//======================================================================//
+// Nama fungsi		: masuk						//
+// Input argumen	: char username[12], char password[10]		//
+// Output argumen	: -						//
 // Deskripsi		: Fungsi ini digunakan untuk menginput username	//
-//					 dan password  untuk dapat lanjut ke program 	//
-// Versi			: 1.0					Rev:0					//
-// Tanggal			: 14-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kadek Intan Cahya Putri	(2105551032)							//
-// Kelas A															//
-//==================================================================//
+//			dan password  untuk dapat lanjut ke program 	//
+// Versi		: 1.0					Rev:0	//
+// Tanggal		: 14-12-2021					//
+// I Gusti Agung Intan Utami Putri (2105551020)				//
+// Kadek Intan Cahya Putri	(2105551032)				//
+// Kelas A								//
+//======================================================================//
 
 void masuk(){
 	/*  Variabel username[12] digunakan untuk menyimpan input username
@@ -222,22 +222,22 @@ void masuk(){
 	return;
 }
 
-//==================================================================//
-//*********			Fungsi Untuk Daftar Akun				********//
-//==================================================================//
-// Nama fungsi		: daftar										//
-// Input argumen	: char username[12], char password[10]			//
-// Output argumen	: -												//
+//======================================================================//
+//*********		Fungsi Untuk Daftar Akun		********//
+//======================================================================//
+// Nama fungsi		: daftar					//
+// Input argumen	: char username[12], char password[10]		//
+// Output argumen	: -						//
 // Deskripsi		: Fungsi ini digunakan untuk menginput username	//
-//					 dan password untuk disimpan pada file 			//
-//					 loginRecord.txt yang nantinya divalidasi saat 	//
-//					 login.											//
-// Versi			: 1.0					Rev:0					//
-// Tanggal			: 14-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kadek Intan Cahya Putri	(2105551032)							//
-// Kelas A															//
-//==================================================================//
+//			dan password untuk disimpan pada file 		//
+//			loginRecord.txt yang nantinya divalidasi saat 	//
+//			login.						//
+// Versi		: 1.0				Rev:0		//
+// Tanggal		: 14-12-2021					//
+// I Gusti Agung Intan Utami Putri (2105551020)				//
+// Kadek Intan Cahya Putri	(2105551032)				//
+// Kelas A								//
+//======================================================================//
 
 void daftar(){
 	// Membuat pointer regis untuk file "loginRecord.txt"
@@ -276,21 +276,21 @@ void daftar(){
 	masuk ();	
 }
 
-//===================================================================//
-//*********			Fungsi Untuk Login Admin				 ********//
-//==================================================================//
-// Nama fungsi		: admin											//
-// Input argumen	: char user[15], char pass[10]					//
-// Output argumen	: -												//
+//======================================================================//
+//********		Fungsi Untuk Login Admin		********//
+//======================================================================//
+// Nama fungsi		: admin						//
+// Input argumen	: char user[15], char pass[10]			//
+// Output argumen	: -						//
 // Deskripsi		: Fungsi ini digunakan untuk menginput username	//
-//					 dan password oleh admin untuk login dan dapat	//
-//					 mengakses program.								//
-// Versi			: 1.0					Rev:0					//
-// Tanggal			: 14-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kadek Intan Cahya Putri	(2105551032)							//
-// Kelas A															//
-//==================================================================//
+//			dan password oleh admin untuk login dan dapat	//
+//			mengakses program.				//
+// Versi		: 1.0				Rev:0		//
+// Tanggal		: 14-12-2021					//
+// I Gusti Agung Intan Utami Putri (2105551020)				//
+// Kadek Intan Cahya Putri	(2105551032)				//
+// Kelas A								//
+//======================================================================//
 
 void admin (){
 	// Insisialisasi variabel username[15] dengan "CLINICPERMATA" dan password[10] dengan "admin2021"
@@ -320,18 +320,18 @@ void admin (){
 	}
 }
 
-//===================================================================//
-//*********			Fungsi Untuk Pilihan Menu				 ********//
-//===================================================================//
-// Nama fungsi		: menu											//
-// Input argumen	: pilihan (1,2,3,4)								//
-// Output argumen	: -												//
-// Deskripsi		: Fungsi ini digunakan untuk memilih menu		//
-// Versi			: 1.0					Rev:0					//
-// Tanggal			: 14-12-2021									//
-// I Gusti Agung Intan Utami Putri (2105551020)						//
-// Kadek Intan Cahya Putri	(2105551032)							//
-// Kelas A															//
+//==================================================================//
+//*********		Fungsi Untuk Pilihan Menu	    ********//
+//==================================================================//
+// Nama fungsi		: menu					    //
+// Input argumen	: pilihan (1,2,3,4)			    //
+// Output argumen	: -					    //
+// Deskripsi		: Fungsi ini digunakan untuk memilih menu   //
+// Versi		: 1.0				Rev:0	    //
+// Tanggal		: 14-12-2021			    	    //
+// I Gusti Agung Intan Utami Putri (2105551020)			    //
+// Kadek Intan Cahya Putri	(2105551032)			    //
+// Kelas A							    //
 //==================================================================//
 
 void menu(){
@@ -339,20 +339,20 @@ void menu(){
 	int pilihan;
 	
 	instruksi:
-	printf ("\t\t\t||======================================||\n");
-	printf ("\t\t\t|| 		PILIHAN MENU MASUK	||\n");
-	printf ("\t\t\t||======================================||\n");
+	printf ("\t\t\t||=======================================||\n");
+	printf ("\t\t\t|| 	PILIHAN MENU MASUK		||\n");
+	printf ("\t\t\t||=======================================||\n");
 	printf ("\t\t\t||	No	|	Menu Masuk	||\n");
-	printf ("\t\t\t||======================================||\n");
+	printf ("\t\t\t||=======================================||\n");
 	printf ("\t\t\t||	1	|	Masuk		||\n");
 	printf ("\t\t\t||	2	|	Registrasi	||\n");
 	printf ("\t\t\t||	3	|	Admin		||\n");
 	printf ("\t\t\t||	4	|	Keluar		||\n");
-	printf ("\t\t\t||======================================||\n");
-	printf ("\t\t\t||======================================||\n");
+	printf ("\t\t\t||=======================================||\n");
+	printf ("\t\t\t||=======================================||\n");
 	printf ("\t\t\t|| Masukkan pilihan anda : ");
 	scanf ("%d", &pilihan);
-	printf ("\t\t\t||======================================||\n");
+	printf ("\t\t\t||=======================================||\n");
 	system ("cls");
 	
 	/* Percabangan Switch dengan kondisi nilai yang disimpan pada variabel
